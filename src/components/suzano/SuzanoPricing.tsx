@@ -2,78 +2,34 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle } from "lucide-react";
-
 const SuzanoPricing = () => {
-  const plans = [
-    {
-      name: "PLANO INICIANTE",
-      priceMonthly: "6,70",
-      priceTotal: "67,00",
-      features: [
-        "42 aulas em vídeo HD (INCLUSIVE EM CÂMERA LENTA)",
-        "Acesso por 2 anos",
-        "PDF de apoio (APOSTILA COM TODOS OS RITMOS E VARIAÇÕES)",
-        "Suporte por IA (inteligência artificial) no WhatsApp",
-        "o Suzano Bot responderá todas as suas dúvidas"
-      ],
-      highlight: false
-    },
-    {
-      name: "PLANO MODERN GROOVES", 
-      priceMonthly: "14,70",
-      priceTotal: "147,00",
-      features: [
-        "MÉTODO EXCLUSIVO CRIADO POR SUZANO (Técnica Invertida)",
-        "MÓDULO 0 COM EXERCÍCIOS",
-        "ELETRO MÓDULO (Pandeiro com Pedais e Sampler)",
-        "FUNK 1",
-        "FUNK 2",
-        "REGGAE",
-        "ALÉM (criado por Suzano)",
-        "AFRO LATINO",
-        "JUNGLE",
-        "DRUM'N BASS",
-        "GROOVE BACK BEAT"
-      ],
-      highlight: false
-    },
-    {
-      name: "CURSO AFRO BRASIL - ATABAQUE E PANDEIRO",
-      priceMonthly: "19,70", 
-      priceTotal: "197,00",
-      features: [
-        "MÓDULO EXERCÍCIOS – PANDEIRO",
-        "MÓDULO CONGO",
-        "MÓDULO ILÚ",
-        "MÓDULO IJEXÁ",
-        "MÓDULO AFRO LATINO",
-        "MÓDULO AGUERÊ",
-        "MÓDULO IBÍ",
-        "MÓDULO BARRAVENTO",
-        "MÓDULO JONGO",
-        "MÓDULO BATUCADA CONGO + CABILA"
-      ],
-      highlight: false
-    },
-    {
-      name: "Plano PRO",
-      priceMonthly: "22,70",
-      priceTotal: "227",
-      originalPrice: "397,00",
-      features: [
-        "Técnica invertida exclusiva",
-        "Coordenação entre mão direita e esquerda", 
-        "7 sons essenciais do pandeiro",
-        "Ritmos como samba, maracatu, baião e mais",
-        "Adaptação para tocar com cajón, congas",
-        "Fluidez, controle e criatividade na sua forma de tocar"
-      ],
-      highlight: true
-    }
-  ];
-
-  return (
-    <section className="py-24 relative overflow-hidden">
+  const plans = [{
+    name: "PLANO INICIANTE",
+    priceMonthly: "6,70",
+    priceTotal: "67,00",
+    features: ["42 aulas em vídeo HD (INCLUSIVE EM CÂMERA LENTA)", "Acesso por 2 anos", "PDF de apoio (APOSTILA COM TODOS OS RITMOS E VARIAÇÕES)", "Suporte por IA (inteligência artificial) no WhatsApp", "o Suzano Bot responderá todas as suas dúvidas"],
+    highlight: false
+  }, {
+    name: "PLANO MODERN GROOVES",
+    priceMonthly: "14,70",
+    priceTotal: "147,00",
+    features: ["MÉTODO EXCLUSIVO CRIADO POR SUZANO (Técnica Invertida)", "MÓDULO 0 COM EXERCÍCIOS", "ELETRO MÓDULO (Pandeiro com Pedais e Sampler)", "FUNK 1", "FUNK 2", "REGGAE", "ALÉM (criado por Suzano)", "AFRO LATINO", "JUNGLE", "DRUM'N BASS", "GROOVE BACK BEAT"],
+    highlight: false
+  }, {
+    name: "CURSO AFRO BRASIL - ATABAQUE E PANDEIRO",
+    priceMonthly: "19,70",
+    priceTotal: "197,00",
+    features: ["MÓDULO EXERCÍCIOS – PANDEIRO", "MÓDULO CONGO", "MÓDULO ILÚ", "MÓDULO IJEXÁ", "MÓDULO AFRO LATINO", "MÓDULO AGUERÊ", "MÓDULO IBÍ", "MÓDULO BARRAVENTO", "MÓDULO JONGO", "MÓDULO BATUCADA CONGO + CABILA"],
+    highlight: false
+  }, {
+    name: "Plano PRO",
+    priceMonthly: "22,70",
+    priceTotal: "227",
+    originalPrice: "397,00",
+    features: ["Técnica invertida exclusiva", "Coordenação entre mão direita e esquerda", "7 sons essenciais do pandeiro", "Ritmos como samba, maracatu, baião e mais", "Adaptação para tocar com cajón, congas", "Fluidez, controle e criatividade na sua forma de tocar"],
+    highlight: true
+  }];
+  return <section className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
       
       <div className="container mx-auto px-6 relative z-10">
@@ -86,21 +42,12 @@ const SuzanoPricing = () => {
 
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          {plans.map((plan, index) => (
-            <Card 
-              key={index}
-              className={`relative overflow-hidden transition-all duration-500 hover:scale-105 animate-slide-up ${
-                plan.highlight 
-                  ? 'border-primary/50 bg-gradient-to-br from-primary/10 to-accent/10' 
-                  : 'border-border/50 bg-card/50 backdrop-blur-sm hover:border-primary/30'
-              }`}
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              {plan.highlight && (
-                <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-primary to-accent py-2">
+          {plans.map((plan, index) => <Card key={index} className={`relative overflow-hidden transition-all duration-500 hover:scale-105 animate-slide-up ${plan.highlight ? 'border-primary/50 bg-gradient-to-br from-primary/10 to-accent/10' : 'border-border/50 bg-card/50 backdrop-blur-sm hover:border-primary/30'}`} style={{
+          animationDelay: `${index * 0.1}s`
+        }}>
+              {plan.highlight && <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-primary to-accent py-2">
                   <p className="text-center text-white font-semibold text-sm">MAIS POPULAR</p>
-                </div>
-              )}
+                </div>}
               
               <CardHeader className={`text-center ${plan.highlight ? 'pt-12' : 'pt-6'}`}>
                 <CardTitle className="text-lg font-bold mb-4">{plan.name}</CardTitle>
@@ -110,9 +57,7 @@ const SuzanoPricing = () => {
                     12x R$ {plan.priceMonthly}
                   </div>
                   <div className="text-sm text-muted-foreground">
-                    {plan.originalPrice && (
-                      <span className="line-through mr-2">De R$ {plan.originalPrice}</span>
-                    )}
+                    {plan.originalPrice && <span className="line-through mr-2">De R$ {plan.originalPrice}</span>}
                     ou R$ {plan.priceTotal} à vista{plan.name === "Plano PRO" ? " no Pix" : ""}
                   </div>
                 </div>
@@ -120,33 +65,22 @@ const SuzanoPricing = () => {
               
               <CardContent className="space-y-4">
                 <div className="space-y-3">
-                  {plan.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-start gap-3">
+                  {plan.features.map((feature, featureIndex) => <div key={featureIndex} className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm text-muted-foreground">{feature}</span>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
                 
-                <Button 
-                  className={`w-full mt-6 ${
-                    plan.highlight 
-                      ? 'bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90' 
-                      : 'bg-primary hover:bg-primary/90'
-                  }`}
-                >
+                <Button className={`w-full mt-6 ${plan.highlight ? 'bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90' : 'bg-primary hover:bg-primary/90'}`}>
                   QUERO COMEÇAR AGORA
                 </Button>
               </CardContent>
               
               {/* Bottom Badge */}
               <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
-                <Badge className="bg-gradient-to-r from-primary to-accent text-white px-4 py-1 text-xs">
-                  + de 2.000 alunos dominando o PANDEIRO
-                </Badge>
+                
               </div>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Guarantee Section */}
@@ -190,8 +124,6 @@ const SuzanoPricing = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default SuzanoPricing;
