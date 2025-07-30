@@ -52,7 +52,7 @@ const SuzanoAbout = () => {
         {/* What You'll Learn */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            O Que Você Vai Aprender na{" "}
+            O Que Você Vai Aprender no{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               curso suzano express
             </span>
