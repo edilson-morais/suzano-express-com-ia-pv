@@ -1,16 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-
 const SuzanoHero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background with gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/10 to-accent/20" />
       
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-accent/20 rounded-full blur-3xl animate-float" style={{
+        animationDelay: '1s'
+      }} />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -57,20 +57,16 @@ const SuzanoHero = () => {
           </div>
 
           {/* Right Content - Robot Image */}
-          <div className="flex justify-center lg:justify-end animate-slide-up" style={{ animationDelay: '0.3s' }}>
+          <div className="flex justify-center lg:justify-end animate-slide-up" style={{
+          animationDelay: '0.3s'
+        }}>
             <div className="relative w-full max-w-md">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-3xl" />
-              <img 
-                src="/lovable-uploads/54a2dbff-b072-4bb2-91a8-107721fbcda2.png" 
-                alt="AI Robot Assistant" 
-                className="relative z-10 w-full h-auto object-contain"
-              />
+              
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default SuzanoHero;
