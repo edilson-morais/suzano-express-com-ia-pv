@@ -19,7 +19,11 @@ const SuzanoHero = () => {
           <div className="flex justify-center lg:justify-start animate-slide-up order-2 lg:order-1">
             <div className="relative w-full max-w-md">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-3xl" />
-              
+              <img 
+                src="/lovable-uploads/7dc542cb-bf84-4d81-96e9-d46de480dce9.png" 
+                alt="Robot AI Assistant" 
+                className="relative z-10 w-full h-auto object-contain drop-shadow-2xl"
+              />
             </div>
           </div>
 
