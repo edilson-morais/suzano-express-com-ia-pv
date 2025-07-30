@@ -1,42 +1,32 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-
 const SuzanoMethod = () => {
-  const steps = [
-    {
-      number: "1",
-      title: "Fundamentos:",
-      description: "Aprenda desde o zero os fundamentos essenciais do pandeiro com a técnica exclusiva de Marcos Suzano, dominando postura, sons, coordenação e independência."
-    },
-    {
-      number: "2", 
-      title: "Criação:",
-      description: "Descubra como criar suas próprias levadas e variações. Desenvolva sua expressão musical com exercícios que estimulam improviso e musicalidade."
-    },
-    {
-      number: "3",
-      title: "Integração:",
-      description: "Aprenda a tocar com outros instrumentos, em rodas, com amigos ou na igreja. Ritmos brasileiros integrados à vivência real da música."
-    },
-    {
-      number: "4",
-      title: "Monetização:",
-      description: "Veja como o que você aprende no curso pode se transformar em apresentações, aulas, rodas e outras formas de gerar renda com a música."
-    },
-    {
-      number: "5",
-      title: "Vendas:",
-      description: "Ganhe confiança para mostrar seu som ao vivo, nas redes ou para oportunidades de trabalho musical. Seu pandeiro como sua voz artística."
-    },
-    {
-      number: "6",
-      title: "Escala:",
-      description: "Monte um plano de estudo contínuo com base no método Suzano Express e siga evoluindo com clareza, foco e propósito."
-    }
-  ];
-
-  return (
-    <section className="py-24 relative overflow-hidden">
+  const steps = [{
+    number: "1",
+    title: "Fundamentos:",
+    description: "Aprenda desde o zero os fundamentos essenciais do pandeiro com a técnica exclusiva de Marcos Suzano, dominando postura, sons, coordenação e independência."
+  }, {
+    number: "2",
+    title: "Criação:",
+    description: "Descubra como criar suas próprias levadas e variações. Desenvolva sua expressão musical com exercícios que estimulam improviso e musicalidade."
+  }, {
+    number: "3",
+    title: "Integração:",
+    description: "Aprenda a tocar com outros instrumentos, em rodas, com amigos ou na igreja. Ritmos brasileiros integrados à vivência real da música."
+  }, {
+    number: "4",
+    title: "Monetização:",
+    description: "Veja como o que você aprende no curso pode se transformar em apresentações, aulas, rodas e outras formas de gerar renda com a música."
+  }, {
+    number: "5",
+    title: "Vendas:",
+    description: "Ganhe confiança para mostrar seu som ao vivo, nas redes ou para oportunidades de trabalho musical. Seu pandeiro como sua voz artística."
+  }, {
+    number: "6",
+    title: "Escala:",
+    description: "Monte um plano de estudo contínuo com base no método Suzano Express e siga evoluindo com clareza, foco e propósito."
+  }];
+  return <section className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5" />
       <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-accent/10 rounded-full blur-2xl" />
@@ -44,9 +34,7 @@ const SuzanoMethod = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Student Count Badge */}
         <div className="text-center mb-8 animate-fade-in">
-          <Badge className="bg-gradient-to-r from-primary to-accent text-white px-6 py-2 text-lg font-semibold">
-            + de 2.000 alunos dominando o PANDEIRO e tocando cada vez mais ainda!
-          </Badge>
+          <Badge className="bg-gradient-to-r from-primary to-accent text-white px-6 py-2 text-lg font-semibold">+ de 2.000 alunos dominando o PANDEIRO e tocando cada vez mais!</Badge>
         </div>
 
         {/* Section Title */}
@@ -64,12 +52,9 @@ const SuzanoMethod = () => {
 
         {/* Method Steps */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {steps.map((step, index) => (
-            <Card 
-              key={index}
-              className="group relative overflow-hidden border-border/50 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-500 hover:scale-105 animate-slide-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
+          {steps.map((step, index) => <Card key={index} className="group relative overflow-hidden border-border/50 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-500 hover:scale-105 animate-slide-up" style={{
+          animationDelay: `${index * 0.1}s`
+        }}>
               {/* Gradient Background on Hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
@@ -94,12 +79,9 @@ const SuzanoMethod = () => {
               <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                 <div className="absolute inset-0 rounded-lg shadow-2xl shadow-primary/20" />
               </div>
-            </Card>
-          ))}
+            </Card>)}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default SuzanoMethod;
