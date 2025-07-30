@@ -71,8 +71,10 @@ const SuzanoPricing = () => {
                     </div>)}
                 </div>
                 
-                <Button className={`w-full mt-6 ${plan.highlight ? 'bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90' : 'bg-primary hover:bg-primary/90'}`}>
-                  QUERO COMEÇAR AGORA
+                <Button asChild className={`w-full mt-6 ${plan.highlight ? 'bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90' : 'bg-primary hover:bg-primary/90'}`}>
+                  <a href="https://pay.kiwify.com.br/dJgNdP4?utm_source=suzano+express+com+IA+pv&utm_id=ia+pv" target="_blank" rel="noopener noreferrer">
+                    QUERO COMEÇAR AGORA
+                  </a>
                 </Button>
               </CardContent>
               
