@@ -23,10 +23,11 @@ const SuzanoPricing = () => {
     highlight: false
   }, {
     name: "Plano PRO",
-    priceMonthly: "22,70",
-    priceTotal: "227",
+    priceMonthly: "20,37",
+    priceTotal: "197,00",
     originalPrice: "397,00",
-    features: ["Técnica invertida exclusiva", "Coordenação entre mão direita e esquerda", "7 sons essenciais do pandeiro", "Ritmos como samba, maracatu, baião e mais", "Adaptação para tocar com cajón, congas", "Fluidez, controle e criatividade na sua forma de tocar"],
+    description: "🎧 PANDEIRO & INTELIGÊNCIA ARTIFICIAL\nEles vão andar com você em todas as etapas dos seus estudos com a ajuda do Suzano Bot, seu assistente inteligente que tira dúvidas e orienta sua jornada.\nAgora você vai saber tudo sobre pandeiro!\n\nAprenda com Marcos Suzano, renomado pandeirista internacional, em um curso moderno e completo.",
+    features: ["Técnica invertida exclusiva", "Coordenação entre mão direita e esquerda", "7 sons essenciais do pandeiro", "Ritmos como samba, maracatu, baião e mais", "Adaptação para tocar com cajón, congas", "Fluidez, controle e criatividade na sua forma de tocar", "Do baião e samba de partido alto ao drum'n'bass, jungle e funk"],
     highlight: true
   }];
   return <section className="py-24 relative overflow-hidden">
@@ -58,9 +59,17 @@ const SuzanoPricing = () => {
                   </div>
                   <div className="text-sm text-muted-foreground">
                     {plan.originalPrice && <span className="line-through mr-2">De R$ {plan.originalPrice}</span>}
-                    ou R$ {plan.priceTotal} à vista{plan.name === "Plano PRO" ? " no Pix" : ""}
+                    por R$ {plan.priceTotal} à vista{plan.name === "Plano PRO" ? " no Pix" : ""}
                   </div>
                 </div>
+                
+                {plan.description && (
+                  <div className="mt-6 text-left">
+                    <div className="text-sm text-muted-foreground whitespace-pre-line">
+                      {plan.description}
+                    </div>
+                  </div>
+                )}
               </CardHeader>
               
               <CardContent className="space-y-4">
