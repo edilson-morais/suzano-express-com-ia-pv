@@ -118,7 +118,7 @@ const SuzanoPricing = () => {
                   </p>
                 </div>
                 
-                <p className="text-primary font-semibold">Mentor Suzano</p>
+                
               </div>
             </Card>
           </div>
