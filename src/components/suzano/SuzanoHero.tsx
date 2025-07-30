@@ -15,8 +15,20 @@ const SuzanoHero = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="space-y-8 animate-fade-in">
+          {/* Left Content - Robot Image */}
+          <div className="flex justify-center lg:justify-start animate-slide-up order-2 lg:order-1">
+            <div className="relative w-full max-w-md">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-3xl" />
+              <img 
+                src="/lovable-uploads/c009760a-f620-48de-8dc9-f1213805e982.png" 
+                alt="AI Robot for Suzano Express 2.0" 
+                className="relative z-10 w-full h-auto max-w-sm mx-auto drop-shadow-2xl"
+              />
+            </div>
+          </div>
+
+          {/* Right Content - Text */}
+          <div className="space-y-8 animate-fade-in order-1 lg:order-2">
             <Badge className="w-fit bg-primary/20 text-primary border-primary/30">
               CURSO DE PANDEIRO DE MARCOS SUZANO
             </Badge>
@@ -53,16 +65,6 @@ const SuzanoHero = () => {
               <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-lg px-8 py-6">
                 QUERO COMEÇAR AGORA
               </Button>
-            </div>
-          </div>
-
-          {/* Right Content - Robot Image */}
-          <div className="flex justify-center lg:justify-end animate-slide-up" style={{
-          animationDelay: '0.3s'
-        }}>
-            <div className="relative w-full max-w-md">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-3xl" />
-              
             </div>
           </div>
         </div>
