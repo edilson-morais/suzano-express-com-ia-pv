@@ -34,7 +34,7 @@ const SuzanoMethod = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Student Count Badge */}
         <div className="text-center mb-8 animate-fade-in">
-          <Badge className="bg-gradient-to-r from-primary to-accent text-white px-6 py-2 text-lg font-semibold">+ de 2.000 alunos dominando o PANDEIRO e tocando cada vez mais!</Badge>
+          
         </div>
 
         {/* Section Title */}
