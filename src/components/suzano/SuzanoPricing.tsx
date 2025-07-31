@@ -4,24 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import { CheckCircle } from "lucide-react";
 const SuzanoPricing = () => {
   const plans = [{
-    name: "PLANO INICIANTE",
-    priceMonthly: "6,70",
-    priceTotal: "67,00",
-    features: ["42 aulas em vídeo HD (INCLUSIVE EM CÂMERA LENTA)", "Acesso por 2 anos", "PDF de apoio (APOSTILA COM TODOS OS RITMOS E VARIAÇÕES)", "Suporte por IA (inteligência artificial) no WhatsApp", "o Suzano Bot responderá todas as suas dúvidas"],
-    highlight: false
-  }, {
-    name: "PLANO MODERN GROOVES",
-    priceMonthly: "14,70",
-    priceTotal: "147,00",
-    features: ["MÉTODO EXCLUSIVO CRIADO POR SUZANO (Técnica Invertida)", "MÓDULO 0 COM EXERCÍCIOS", "ELETRO MÓDULO (Pandeiro com Pedais e Sampler)", "FUNK 1", "FUNK 2", "REGGAE", "ALÉM (criado por Suzano)", "AFRO LATINO", "JUNGLE", "DRUM'N BASS", "GROOVE BACK BEAT"],
-    highlight: false
-  }, {
-    name: "CURSO AFRO BRASIL - ATABAQUE E PANDEIRO",
-    priceMonthly: "19,70",
-    priceTotal: "197,00",
-    features: ["MÓDULO EXERCÍCIOS – PANDEIRO", "MÓDULO CONGO", "MÓDULO ILÚ", "MÓDULO IJEXÁ", "MÓDULO AFRO LATINO", "MÓDULO AGUERÊ", "MÓDULO IBÍ", "MÓDULO BARRAVENTO", "MÓDULO JONGO", "MÓDULO BATUCADA CONGO + CABILA"],
-    highlight: false
-  }, {
     name: "Plano PRO",
     priceMonthly: "20,37",
     priceTotal: "197,00",
@@ -42,7 +24,7 @@ const SuzanoPricing = () => {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        <div className="flex justify-center max-w-lg mx-auto">
           {plans.map((plan, index) => <Card key={index} className={`relative overflow-hidden transition-all duration-500 hover:scale-105 animate-slide-up ${plan.highlight ? 'border-primary/50 bg-gradient-to-br from-primary/10 to-accent/10' : 'border-border/50 bg-card/50 backdrop-blur-sm hover:border-primary/30'}`} style={{
           animationDelay: `${index * 0.1}s`
         }}>
