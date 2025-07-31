@@ -16,30 +16,10 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-foreground/80 hover:text-primary transition-colors">
-              Features
-            </a>
-            <a href="#solutions" className="text-foreground/80 hover:text-primary transition-colors">
-              Solutions
-            </a>
-            <a href="#pricing" className="text-foreground/80 hover:text-primary transition-colors">
-              Pricing
-            </a>
-            <a href="#about" className="text-foreground/80 hover:text-primary transition-colors">
-              About
-            </a>
-          </div>
+          
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost">
-              Sign In
-            </Button>
-            <Button variant="default">
-              Get Started
-            </Button>
-          </div>
+          
 
           {/* Mobile Menu Button */}
           <button onClick={toggleMenu} className="md:hidden p-2 rounded-lg hover:bg-muted transition-colors">
