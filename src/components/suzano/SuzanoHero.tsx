@@ -19,11 +19,7 @@ const SuzanoHero = () => {
           <div className="flex justify-center lg:justify-start animate-slide-up order-2 lg:order-1">
             <div className="relative w-full max-w-md">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-3xl" />
-              <img 
-                src="/lovable-uploads/daefc143-7f8b-4fad-a7a8-3d7a4c14236c.png" 
-                alt="Suzano Bot AI Assistant" 
-                className="relative z-10 w-full h-auto object-contain drop-shadow-2xl"
-              />
+              <img src="/lovable-uploads/daefc143-7f8b-4fad-a7a8-3d7a4c14236c.png" alt="Suzano Bot AI Assistant" className="relative z-10 w-full h-auto object-contain drop-shadow-2xl" />
             </div>
           </div>
 
@@ -45,9 +41,7 @@ const SuzanoHero = () => {
               Seu Professor Particular de Pandeiro online 24 horas por dia.
             </p>
             
-            <p className="text-lg text-muted-foreground">
-              Seja um dos primeiros a experimentar a revolução da IA no aprendizado do pandeiro.
-            </p>
+            
             
             <p className="text-base text-muted-foreground">
               A IA mais avançada a serviço do seu aprendizado musical: aprenda no seu ritmo, onde e quando quiser
