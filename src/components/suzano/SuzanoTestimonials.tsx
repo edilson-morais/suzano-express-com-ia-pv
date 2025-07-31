@@ -17,10 +17,22 @@ const SuzanoTestimonials = () => {
             </h2>
             
             <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/20">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Marcos Suzano é reconhecido mundialmente como um dos maiores pandeiristas do Brasil, 
-                revolucionando a forma de tocar o instrumento com sua técnica única e inovadora.
-              </p>
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="flex-shrink-0">
+                  <img 
+                    src="/lovable-uploads/ced24b54-be42-4a83-8442-3490135eff92.png" 
+                    alt="Marcos Suzano tocando pandeiro"
+                    className="w-48 h-48 object-cover rounded-lg"
+                  />
+                </div>
+                <div className="text-center md:text-left">
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    Meu nome é Marcos Suzano, criador da "técnica invertida" e do método Suzano Express. 
+                    Sou reconhecido mundialmente como um dos maiores pandeiristas do Brasil, 
+                    revolucionando a forma de tocar o instrumento com minha técnica única e inovadora.
+                  </p>
+                </div>
+              </div>
             </Card>
           </div>
 
@@ -33,28 +45,33 @@ const SuzanoTestimonials = () => {
               </span>
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-              {['A', 'B', 'C'].map((letter, index) => (
-                <Card 
-                  key={index}
-                  className="aspect-square bg-card/30 backdrop-blur-sm border-primary/20 flex items-center justify-center hover:border-primary/40 transition-all duration-300 animate-slide-up"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <span className="text-4xl font-bold text-primary">{letter}</span>
-                </Card>
-              ))}
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-              {['D', 'E', 'F', 'G', 'H'].map((letter, index) => (
-                <Card 
-                  key={index}
-                  className="aspect-square bg-card/30 backdrop-blur-sm border-primary/20 flex items-center justify-center hover:border-primary/40 transition-all duration-300 animate-slide-up"
-                  style={{ animationDelay: `${(index + 3) * 0.1}s` }}
-                >
-                  <span className="text-3xl font-bold text-primary">{letter}</span>
-                </Card>
-              ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                'https://youtu.be/8lXgS2xZxv8',
+                'https://youtu.be/lJCwvkgSUVY',
+                'https://youtu.be/a5Fkulj2SIY',
+                'https://youtu.be/ZnkHaKyEJ4A'
+              ].map((videoUrl, index) => {
+                const videoId = videoUrl.split('/').pop();
+                return (
+                  <Card 
+                    key={index}
+                    className="overflow-hidden bg-card/30 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300 animate-slide-up"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    <div className="aspect-video">
+                      <iframe
+                        src={`https://www.youtube.com/embed/${videoId}`}
+                        title={`Depoimento ${index + 1}`}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="w-full h-full"
+                      />
+                    </div>
+                  </Card>
+                );
+              })}
             </div>
           </div>
 
