@@ -87,6 +87,13 @@ const SuzanoPricing = () => {
             
             <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/20">
               <div className="space-y-6">
+                <div className="flex justify-center mb-6">
+                  <img 
+                    src="/lovable-uploads/3479fe28-c06a-40d6-829e-f6c4620cce7d.png" 
+                    alt="Garantia 15 dias incondicional" 
+                    className="w-32 h-32 object-contain"
+                  />
+                </div>
                 <h4 className="text-2xl font-bold text-primary">Garantia 15 dias incondicional</h4>
                 
                 <div className="space-y-4 text-muted-foreground">

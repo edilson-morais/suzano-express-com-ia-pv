@@ -27,11 +27,11 @@ const SuzanoFooter = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
               <span className="text-primary font-bold">suzano express</span>
               <div className="flex gap-4 text-sm">
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://politica-de-privacidade.rota50ia.com" className="text-muted-foreground hover:text-primary transition-colors">
                   Termos de Uso
                 </a>
                 <span className="text-muted-foreground">|</span>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://politica-de-privacidade.rota50ia.com" className="text-muted-foreground hover:text-primary transition-colors">
                   Política de Privacidade
                 </a>
               </div>
