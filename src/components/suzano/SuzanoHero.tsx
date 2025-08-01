@@ -17,9 +17,9 @@ const SuzanoHero = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content - Robot Image */}
-          <div className="flex justify-center lg:justify-start animate-slide-up order-2 lg:order-1">
+          <div className="flex flex-col items-center lg:items-start animate-slide-up order-2 lg:order-1 space-y-6">
             <div className="relative w-full max-w-md">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-3xl" />
               <img 
@@ -28,6 +28,10 @@ const SuzanoHero = () => {
                 className="relative z-10 w-full h-auto object-contain drop-shadow-2xl" 
               />
             </div>
+            
+            <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-lg px-8 py-6">
+              QUERO COMEÇAR AGORA
+            </Button>
           </div>
 
           {/* Right Content - Text */}
@@ -60,10 +64,6 @@ const SuzanoHero = () => {
               <p className="text-base text-muted-foreground">
                 Está cansado(a) de não ter ideias na hora de tocar pandeiro? Com nosso método exclusivo, você vai desbloquear seu potencial criativo e apresentar ritmos novos e empolgantes. Domine técnicas inovadoras e impressione a todos!
               </p>
-              
-              <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-lg px-8 py-6">
-                QUERO COMEÇAR AGORA
-              </Button>
             </div>
           </div>
         </div>
