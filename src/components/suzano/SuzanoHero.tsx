@@ -1,7 +1,10 @@
+
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+
 const SuzanoHero = () => {
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background with gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/10 to-accent/20" />
       
@@ -19,7 +22,11 @@ const SuzanoHero = () => {
           <div className="flex justify-center lg:justify-start animate-slide-up order-2 lg:order-1">
             <div className="relative w-full max-w-md">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-3xl" />
-              <img src="/lovable-uploads/daefc143-7f8b-4fad-a7a8-3d7a4c14236c.png" alt="Suzano Bot AI Assistant" className="relative z-10 w-full h-auto object-contain drop-shadow-2xl" />
+              <img 
+                src="/lovable-uploads/a0cee00a-7fd3-4e82-9ae1-aac1dd53a883.png" 
+                alt="Suzano Bot AI Assistant - Olá! Eu sou o Suzano Bot" 
+                className="relative z-10 w-full h-auto object-contain drop-shadow-2xl" 
+              />
             </div>
           </div>
 
@@ -41,8 +48,6 @@ const SuzanoHero = () => {
               Seu Professor Particular de Pandeiro online 24 horas por dia.
             </p>
             
-            
-            
             <p className="text-base text-muted-foreground">
               A IA mais avançada a serviço do seu aprendizado musical: aprenda no seu ritmo, onde e quando quiser
             </p>
@@ -63,6 +68,8 @@ const SuzanoHero = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default SuzanoHero;
