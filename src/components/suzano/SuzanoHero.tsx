@@ -17,9 +17,9 @@ const SuzanoHero = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content - Robot Image */}
-          <div className="flex flex-col items-center lg:items-start animate-slide-up order-2 lg:order-1 space-y-6 lg:-mr-8">
+          <div className="flex flex-col items-center lg:items-start animate-slide-up order-2 lg:order-1 space-y-6">
             <div className="relative w-full max-w-md">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-3xl" />
               <img 
