@@ -17,7 +17,7 @@ const SuzanoHero = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center">
           {/* Left Content - Robot Image */}
           <div className="flex flex-col items-center lg:items-start animate-slide-up order-2 lg:order-1 space-y-6">
             <div className="relative w-full max-w-md">
