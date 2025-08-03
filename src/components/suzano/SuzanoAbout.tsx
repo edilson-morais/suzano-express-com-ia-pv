@@ -156,6 +156,34 @@ const SuzanoAbout = () => {
           </div>
         </div>
 
+        {/* AI Section */}
+        <div className="mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            {/* Left - Image */}
+            <div className="flex justify-center">
+              <div className="relative w-full max-w-md">
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-3xl" />
+                <img 
+                  src="/lovable-uploads/a0cee00a-7fd3-4e82-9ae1-aac1dd53a883.png" 
+                  alt="Suzano Bot AI Assistant" 
+                  className="relative z-10 w-full h-auto object-contain drop-shadow-2xl" 
+                />
+              </div>
+            </div>
+            
+            {/* Right - Text */}
+            <div className="space-y-6">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Aprender pandeiro com o apoio da IA Suzano BoT é como ter um professor disponível 24h por dia. 
+                Ele responde dúvidas em tempo real, sugere exercícios personalizados, acompanha seu progresso e 
+                dá dicas práticas para corrigir erros. Com o Suzano BoT, você estuda no seu ritmo, com autonomia 
+                e segurança, acelerando sua evolução no instrumento. É tecnologia aliada à tradição, colocando 
+                o pandeiro na palma da sua mão de um jeito moderno e eficaz.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Target Audience */}
         <div className="text-center">
           <h3 className="text-3xl md:text-4xl font-bold mb-8">
