@@ -29,7 +29,11 @@ const SuzanoHero = () => {
               />
             </div>
             
-            <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-lg px-8 py-6">
+            <Button 
+              size="lg" 
+              className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-lg px-8 py-6"
+              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               QUERO COMEÇAR AGORA
             </Button>
           </div>

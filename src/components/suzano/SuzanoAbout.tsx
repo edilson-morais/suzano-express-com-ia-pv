@@ -79,7 +79,11 @@ const SuzanoAbout = () => {
           </div>
           
           <div className="text-center mt-8">
-            <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-lg px-8 py-6">
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-lg px-8 py-6"
+              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               QUERO COMEÇAR AGORA
             </Button>
           </div>
@@ -214,7 +218,11 @@ const SuzanoAbout = () => {
             ))}
           </div>
 
-          <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-lg px-8 py-6">
+          <Button 
+            size="lg" 
+            className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-lg px-8 py-6"
+            onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             QUERO COMEÇAR AGORA
           </Button>
         </div>

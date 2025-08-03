@@ -12,7 +12,7 @@ const SuzanoPricing = () => {
     features: ["Técnica invertida exclusiva", "Coordenação entre mão direita e esquerda", "7 sons essenciais do pandeiro", "Ritmos como samba, maracatu, baião e mais", "Adaptação para tocar com cajón, congas", "Fluidez, controle e criatividade na sua forma de tocar", "Do baião e samba de partido alto ao drum'n'bass, jungle e funk"],
     highlight: true
   }];
-  return <section className="py-24 relative overflow-hidden">
+  return <section id="pricing" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
       
       <div className="container mx-auto px-6 relative z-10">
