@@ -5,8 +5,8 @@ import { CheckCircle } from "lucide-react";
 const SuzanoPricing = () => {
   const plans = [{
     name: "Plano PRO",
-    priceMonthly: "20,37",
-    priceTotal: "197,00",
+    priceMonthly: "23,48",
+    priceTotal: "227,00",
     originalPrice: "397,00",
     description: "🎧 PANDEIRO & INTELIGÊNCIA ARTIFICIAL\nEles vão andar com você em todas as etapas dos seus estudos com a ajuda do Suzano Bot, seu assistente inteligente que tira dúvidas e orienta sua jornada.\nAgora você vai saber tudo sobre pandeiro!\n\nAprenda com Marcos Suzano, renomado pandeirista internacional, em um curso moderno e completo.",
     features: ["Técnica invertida exclusiva", "Coordenação entre mão direita e esquerda", "7 sons essenciais do pandeiro", "Ritmos como samba, maracatu, baião e mais", "Adaptação para tocar com cajón, congas", "Fluidez, controle e criatividade na sua forma de tocar", "Do baião e samba de partido alto ao drum'n'bass, jungle e funk"],
